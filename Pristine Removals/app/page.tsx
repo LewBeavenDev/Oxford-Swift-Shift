@@ -32,7 +32,7 @@ export default function Home() {
       </div>
       <Divider className="w-20 mx-auto my-10 rounded-xl bg-gradient-to-r from-cyan-600 to-gray-500" />
       <div className="flex justify-between gap-4 px-32 text-start">
-        <div className="">
+        <div className="py-4">
           <p className="text-start">
             Here at{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-gray-400">
@@ -75,7 +75,7 @@ export default function Home() {
             Pricing{" "}
           </Button>
         </div>
-        <div className="">
+        <div className="hidden md:block">
           <Image
             isBlurred
             isZoomed
