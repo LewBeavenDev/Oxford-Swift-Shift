@@ -66,16 +66,18 @@ export const Navbar = () => {
       <NavbarMenu>
         <div className="flex flex-col gap-2 mx-4 mt-">
           {siteConfig.navMenuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
+            <NavbarMenuItem key={`${item.label}-${index}`}>
+              {" "}
+              {/* Changed key to use item.label for better uniqueness */}
               <Link
                 color={
                   index === 2
-                    ? "primary"
+                    ? "foreground"
                     : index === siteConfig.navMenuItems.length - 1
-                      ? "danger"
+                      ? "foreground"
                       : "foreground"
                 }
-                href="#"
+                href={item.href} // Corrected dynamic href usage
                 size="lg"
               >
                 {item.label}

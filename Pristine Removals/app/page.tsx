@@ -6,25 +6,33 @@ export default function Home() {
   return (
     <NextUIProvider>
       <div className="flex items-center justify-center">
-        <div className="flex items-center justify-center w-3/4 h-1/2">
+        <div className="flex items-center justify-center md:w-3/4 md:h-1/2">
           <Image
             isBlurred
             isZoomed
             alt="Removals Van"
+            className="hidden md:block"
             src="/pristine-removals-van.jpg"
           />
-          <div className="absolute z-10 flex justify-center w-1/2 p-1 shadow-lg shadow-black/90 rounded-xl bg-slate-600">
+          <div className="absolute z-10 flex justify-center max-w-xl p-1 rounded-lg shadow-lg w-50 md:shadow-black/90 md:bg-slate-600">
             <Image
               isBlurred
               alt="Pristine Removals Logo"
+              className="hidden md:block"
               src="/horizontal-logo.png"
+            />
+            <Image
+              isBlurred
+              alt="Pristine Removals Logo"
+              className="mt-10 rounded-none md:rounded-md md:hidden"
+              src="/vertical-logo.png"
             />
           </div>
         </div>
       </div>
-      <Divider className="w-20 mx-auto my-10 rounded-xl bg-gradient-to-r from-cyan-600 to-gray-500" />
-      <div className="flex justify-start w-full px-32 text-start max-h-min">
-        <p className="w-90% text-6xl text-transparent text-wrap bg-clip-text bg-gradient-to-r from-cyan-600 to-gray-400">
+      <Divider className="hidden w-20 mx-auto my-10 rounded-xl bg-gradient-to-r from-cyan-600 to-gray-500 md:block" />
+      <div className="flex justify-start w-full md:px-32 text-start max-h-min">
+        <p className="md:w-90% mt-36 md:text-center text-6xl text-transparent text-wrap bg-clip-text bg-gradient-to-r from-cyan-600 to-gray-400">
           Welcome to the Removal Solution of the{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-red-400">
             Future{" "}
@@ -32,8 +40,8 @@ export default function Home() {
         </p>
       </div>
       <Divider className="w-20 mx-auto my-10 rounded-xl bg-gradient-to-r from-cyan-600 to-gray-500" />
-      <div className="flex justify-between gap-4 px-32 text-start">
-        <div className="px-2 py-10">
+      <div className="flex justify-between gap-4 text-center md:px-32 md:text-start">
+        <div className="px-2">
           <p className="text-start">
             Here at{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-gray-400">
@@ -44,7 +52,7 @@ export default function Home() {
               Ten Years
             </span>
             , we are proud to have delivered{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-red-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-gray-500">
               Consistent Results
             </span>
             , to the{" "}
