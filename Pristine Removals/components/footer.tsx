@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <NextUIProvider>
       <div>
-        <Divider className="w-4/5 mx-auto my-10 rounded-xl bg-gradient-to-r from-cyan-600 to-gray-500" />
+        <Divider className="w-2/3 mx-auto my-10 rounded-xl bg-gradient-to-r from-cyan-600 to-gray-500" />
         <div className="flex justify-center">
           <h1>Hello Footer</h1>
         </div>
@@ -15,4 +15,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer; 
