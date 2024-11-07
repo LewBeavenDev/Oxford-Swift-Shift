@@ -13,7 +13,7 @@ export default function Home() {
             alt="Removals Van"
             src="/pristine-removals-van.jpg"
           />
-          <div className="absolute z-10 w-1/2 p-1 shadow-lg shadow-black/50 rounded-xl bg-slate-600/50">
+          <div className="absolute z-10 flex justify-center w-1/2 p-1 shadow-lg shadow-black/90 rounded-xl bg-slate-600">
             <Image
               isBlurred
               alt="Pristine Removals Logo"
