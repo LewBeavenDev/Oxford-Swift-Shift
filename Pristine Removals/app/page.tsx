@@ -2,6 +2,7 @@
 import * as React from "react";
 import { NextUIProvider, Image, Divider, Button } from "@nextui-org/react";
 import Link from "next/link";
+import { reviews } from "../app/js/reviewData";
 export default function Home() {
   return (
     <NextUIProvider>
@@ -98,6 +99,26 @@ export default function Home() {
             src="/moving-1.jpg"
             width={2000}
           />
+        </div>
+      </div>
+      <div className="md:px-32">
+        <div className="w-full max-w-3xl px-4 mt-20">
+          <h2 className="mb-6 text-2xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-gray-400">
+            Reviews
+          </h2>
+          <div className="flex flex-col gap-6">
+            {reviews.map((review, index) => (
+              <div
+                key={index}
+                className="p-4 shadow-md bg-slate-800/20 rounded-xl"
+              >
+                <p className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-red-400">
+                  {review.name}
+                </p>
+                <p className="mt-2 text-gray-200">{review.review}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </NextUIProvider>
