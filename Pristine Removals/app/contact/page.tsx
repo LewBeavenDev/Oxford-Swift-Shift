@@ -13,18 +13,22 @@ export default function ContactPage() {
         >
           Contact
         </h1>
-        <p className="w-1/2 mt-10 text-center px-auto">
+        <p className="w-1/2 mt-10 text-center md:w-[450] px-auto">
           Get in contact with us through our form and we will get back to you.
           If you&apos;re in urgent need of a quote, give us a call on the number
           provided.
         </p>
         <div>
-          <form action="POST" className="flex flex-col w-full gap-4 pt-10">
-            <Input placeholder="Name" type="text" />
-            <Input placeholder="Email" type="email" />
-            <Textarea placeholder="Message" />
+          <form
+            action="https://formspree.io/f/mzzbrjrk" // Replace with your desired email
+            className="flex flex-col gap-4 pt-10 md:w-[450] w-full"
+            method="POST"
+          >
+            <Input required name="name" placeholder="Name" type="text" />
+            <Input required name="email" placeholder="Email" type="email" />
+            <Textarea required name="message" placeholder="Message" />
             <Button
-              className="bg-gradient-to-r from-amber-600 to-red-400"
+              className="bg-gradient-to-r from-amber-600 to-red-400 md:w-full"
               type="submit"
             >
               Submit
