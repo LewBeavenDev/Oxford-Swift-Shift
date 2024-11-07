@@ -101,7 +101,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="md:px-32">
+      <div className="flex justify-center md:px-32">
         <div className="w-full max-w-3xl px-4 mt-20">
           <h2 className="mb-6 text-2xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-gray-400">
             Reviews
