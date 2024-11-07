@@ -1,6 +1,7 @@
 "use client";
 import * as React from "react";
 import { NextUIProvider, Image, Divider, Button } from "@nextui-org/react";
+import Link from "next/link";
 export default function Home() {
   return (
     <NextUIProvider>
@@ -32,7 +33,7 @@ export default function Home() {
       </div>
       <Divider className="w-20 mx-auto my-10 rounded-xl bg-gradient-to-r from-cyan-600 to-gray-500" />
       <div className="flex justify-between gap-4 px-32 text-start">
-        <div className="py-4">
+        <div className="px-2 py-10">
           <p className="text-start">
             Here at{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-gray-400">
@@ -59,20 +60,24 @@ export default function Home() {
           </Button>
           <Divider className="w-20 mx-auto my-4 rounded-xl bg-gradient-to-r from-cyan-600 to-gray-500" />
           <p className="text-start">
-            Due to our wide array of services, we have pricing to suit all
-            needs. Check out our{" "}
+            Due to our{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-red-400">
-              Pricing{" "}
-            </span>
-            via the button below!
+              Wide Array of Services
+            </span>{" "}
+            , we have pricing to suit all needs. The best way to get a quote
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-red-400">
+              {" "}
+              Specific to Your Needs
+            </span>{" "}
+            is to head to our contact page and speak to us directly.
           </p>
           <Button
             className="mt-4 border-2 bg-gradient-to-r from-amber-600/15 to-red-400/15 border-amber-600"
+            href="/contact"
             size="sm"
             variant="bordered"
           >
-            {" "}
-            Pricing{" "}
+            <Link href="/contact">Contact</Link>
           </Button>
         </div>
         <div className="hidden md:block">

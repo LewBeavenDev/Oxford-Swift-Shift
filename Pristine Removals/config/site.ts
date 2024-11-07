@@ -12,10 +12,6 @@ export const siteConfig = {
       label: "Contact",
       href: "/contact",
     },
-    {
-      label: "Pricing",
-      href: "/pricing",
-    },
   ],
   navMenuItems: [
     {
@@ -25,10 +21,6 @@ export const siteConfig = {
     {
       label: "Contact",
       href: "/contact",
-    },
-    {
-      label: "Pricing",
-      href: "/pricing",
     },
   ],
 };
