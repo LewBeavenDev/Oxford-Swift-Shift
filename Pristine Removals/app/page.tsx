@@ -2,6 +2,7 @@
 import * as React from "react";
 import { NextUIProvider, Image, Divider, Button } from "@nextui-org/react";
 import Link from "next/link";
+
 import { reviews } from "../app/js/reviewData";
 export default function Home() {
   return (
