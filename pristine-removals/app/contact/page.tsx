@@ -20,7 +20,7 @@ export default function ContactPage() {
         </p>
         <div>
           <form
-            action="https://formspree.io/f/mzzbrjrk" // Replace with your desired email
+            action="https://formspree.io/f/xgvekqra" // Replace with your desired email
             className="flex flex-col gap-4 pt-10 md:w-[450] w-full"
             method="POST"
           >

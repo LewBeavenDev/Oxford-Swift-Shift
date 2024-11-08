@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="w-1/2 px-10">
             <p>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-red-400">
-                Email: dilwar2008@live.co.uk
+                Email: pristine-removals@gmail.com
               </span>
             </p>
           </div>
