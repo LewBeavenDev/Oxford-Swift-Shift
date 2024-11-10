@@ -64,10 +64,6 @@ export default function Home() {
             From complete house moves to just one item of furniture, we will
             move it.{" "}
           </p>
-          <Button className="mt-4" color="primary" size="sm" variant="bordered">
-            {" "}
-            Find out More{" "}
-          </Button>
           <Divider className="w-20 mx-auto my-4 rounded-xl bg-gradient-to-r from-cyan-600 to-gray-500" />
           <p className="text-start">
             Due to our{" "}
