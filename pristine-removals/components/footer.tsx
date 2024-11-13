@@ -12,14 +12,14 @@ const Footer = () => {
           <div className="w-1/2 px-10">
             <p>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-red-400">
-                Email: pristine-removals@gmail.com
+                Email: oxfordpristineremovals@gmail.com
               </span>
             </p>
           </div>
           <div className="w-1/2 px-10 text-end">
             <p>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-red-400">
-                Phone: 07887631348
+                Phone: 07717 887 996
               </span>
             </p>
           </div>
